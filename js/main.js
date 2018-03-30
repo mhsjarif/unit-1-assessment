@@ -17,6 +17,7 @@ initialize();
 function initialize() {
     count = 0;
     increment = 0;
+    render();
 };
 
 function addFunc() {
