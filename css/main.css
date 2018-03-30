@@ -1,0 +1,12 @@
+
+
+#number-display {
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    margin: 50px auto 10px auto;
+}
+
+#counter {
+    display: inline-block;
+}
