@@ -21,7 +21,7 @@ function initialize() {
 };
 
 function addFunc() {
-    increment =+ parseInt(incrementInput.value, "<br>");
+    increment += parseInt(incrementInput.value, "<br>");
     count += increment;
     render();
 };
@@ -32,7 +32,13 @@ function reduceFunc() {
 };
 
 function render() {
-    numberDisplay.textContent = count;
+    if ( Math.sign(count) === -1) {
+        numberDisplay.textContent = count;
+        numberDisplay.style.color = "red";
+    } else {
+        numberDisplay.textContent = count;
+        numberDisplay.style.color = "black";
+    }
 
 };
 
